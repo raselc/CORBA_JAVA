@@ -1,0 +1,10 @@
+module DPIS_idl {
+	interface DPIS{
+	boolean createCRecord(in string firstName, in string lastName,in string description, in string status, in string badgeId);
+	boolean createMRecord(in string firstName, in string lastName,in string address, in string lastdate,in string lastaddress,in string status,in string badgeId);
+	string getRecordCounts(in string badgeId);
+	boolean editCRecord (in string lastName,in string recordID,in string newStatus,in string badgeId);
+	boolean transferRecord(in string recordID,in string bagdeId,in string remoteStation);
+
+	};
+};
